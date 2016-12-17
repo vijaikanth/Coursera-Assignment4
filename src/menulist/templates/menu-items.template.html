@@ -1,0 +1,15 @@
+<div class="container">
+	<a ui-sref="home">Home</a> &lt; <a ui-sref='categories'>Categories</a> &lt; <span>Items</span>
+    <h2 class="hero-h"> Menu Categories items </h2>
+	<div class="cats">
+	    <ul class="items">
+					<li ng-repeat='menuItem in catItems.items.menu_items'>
+						<h3 >{{  menuItem.name  }}</h3>
+						<span>{{ menuItem.description  }}</span>
+						<span>{{ menuItem.short_name  }}</span>
+						<span>{{ menuItem.price_small }}</span>
+						<span>{{ menuItem.price_large }}</span>
+					</li>
+  		</ul>
+	</div>
+</div>
